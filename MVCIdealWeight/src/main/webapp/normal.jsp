@@ -11,3 +11,10 @@
 	<h6>Your are normal! Keep going</h6>
 </body>
 </html>
+
+<!--
+We can get information from the requestDispatcher that was forwarded using different ways :
+- ${key.attribute} exemple : ${object.attribute}
+- <jsp:useBean id="key" type="somePackage.ValueObject" scope="request" />
+<jsp:getProperty name="key" property="someProperty"/>
+-->
