@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>ServletTest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>forumTest</servlet-name>
+    <servlet-class>com.forumTest</servlet-class>
+    <init-param>
+      <param-name>jdbc.Driver</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>localisation</param-name>
+      <param-value>jdbc:mysql://localhost:3306/jeedb</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>forumTest</servlet-name>
+    <url-pattern>/forumTest</url-pattern>
+  </servlet-mapping>
+</web-app>
